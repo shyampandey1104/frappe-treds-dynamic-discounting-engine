@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "frappe-treds-dynamic-discounting-engine"
+authors = [{name = "Shyam Kumar Pandey", email = "shyamkumarpandey1104@gmail.com"}]
+description = "Frappe TReDS Invoice Factoring & Early Payment Dynamic Discounting Engine: MSME Cash Acceleration & AP Optimization."
+version = "1.0.0"
+readme = "README.md"
+classifiers = ["Framework :: Frappe"]

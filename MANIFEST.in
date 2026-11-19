@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include treds_dynamic_discounting *.css
+recursive-include treds_dynamic_discounting *.csv
+recursive-include treds_dynamic_discounting *.html
+recursive-include treds_dynamic_discounting *.ico
+recursive-include treds_dynamic_discounting *.js
+recursive-include treds_dynamic_discounting *.json
+recursive-include treds_dynamic_discounting *.md
+recursive-include treds_dynamic_discounting *.png
+recursive-include treds_dynamic_discounting *.py
+recursive-include treds_dynamic_discounting *.svg
+recursive-include treds_dynamic_discounting *.txt
+recursive-exclude treds_dynamic_discounting *.pyc

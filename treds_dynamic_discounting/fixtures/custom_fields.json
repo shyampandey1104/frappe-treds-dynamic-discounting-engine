@@ -1,0 +1,9 @@
+[
+ {
+  "dt": "Frappe Treds Dynamic Discounting Engine Entry",
+  "fieldname": "custom_audit_verified",
+  "fieldtype": "Check",
+  "insert_after": "status",
+  "label": "Audit Verified"
+ }
+]
