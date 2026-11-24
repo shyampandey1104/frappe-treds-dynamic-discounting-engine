@@ -1,0 +1,104 @@
+{
+ "charts": [
+  {
+   "chart_name": "Frappe Treds Dynamic Discounting Engine Volume Trend",
+   "label": "Frappe Treds Dynamic Discounting Engine Volume Trend"
+  }
+ ],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Frappe Treds Dynamic Discounting Engine Workspace\", \"level\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Frappe Treds Dynamic Discounting Engine Operations\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Audit & Compliance\"}}]",
+ "creation": "2026-04-01 10:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "octicon octicon-package",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Frappe Treds Dynamic Discounting Engine",
+ "links": [
+  {
+   "label": "Operational Documents",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Frappe Treds Dynamic Discounting Engine Entry",
+   "label": "Frappe Treds Dynamic Discounting Engine Entry",
+   "link_to": "Frappe Treds Dynamic Discounting Engine Entry",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "label": "Audit & Reports",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Frappe Treds Dynamic Discounting Engine Audit Log",
+   "label": "Frappe Treds Dynamic Discounting Engine Audit Log",
+   "link_to": "Frappe Treds Dynamic Discounting Engine Audit Log",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "is_query_report": 1,
+   "label": "Frappe Treds Dynamic Discounting Engine Summary",
+   "link_to": "Frappe Treds Dynamic Discounting Engine Summary",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "label": "Configuration",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Frappe Treds Dynamic Discounting Engine Settings",
+   "label": "Frappe Treds Dynamic Discounting Engine Settings",
+   "link_to": "Frappe Treds Dynamic Discounting Engine Settings",
+   "link_type": "DocType",
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-04-01 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Treds_Dynamic_Discounting",
+ "name": "Frappe Treds Dynamic Discounting Engine",
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Frappe Treds Dynamic Discounting Engine Entry",
+   "label": "Recent Frappe Treds Dynamic Discounting Engine Entries"
+  }
+ ],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
+ "sequence_id": 1,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Frappe Treds Dynamic Discounting Engine Entrys",
+   "link_to": "Frappe Treds Dynamic Discounting Engine Entry",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "System Settings",
+   "link_to": "Frappe Treds Dynamic Discounting Engine Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "label": "Compliance Digest",
+   "link_to": "Frappe Treds Dynamic Discounting Engine Summary",
+   "type": "Report"
+  }
+ ],
+ "title": "Frappe Treds Dynamic Discounting Engine"
+}

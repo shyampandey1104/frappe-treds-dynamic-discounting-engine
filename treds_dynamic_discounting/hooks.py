@@ -1,14 +1,37 @@
-# Copyright (c) 2026, Shyam Kumar Pandey and contributors
+# Copyright (c) 2026, Shyamkumar Pandey and contributors
 # For license information, please see license.txt
 
-app_name = "frappe-treds-dynamic-discounting-engine"
+app_name = "treds_dynamic_discounting"
 app_title = "Frappe Treds Dynamic Discounting Engine"
-app_publisher = "Shyam Kumar Pandey"
-app_description = "Frappe TReDS Invoice Factoring & Early Payment Dynamic Discounting Engine: MSME Cash Acceleration & AP Optimization."
-app_icon = "octicon octicon-book"
-app_color = "#5890FF"
-app_email = "shyamkumarpandey1104@gmail.com"
+app_publisher = "Shyamkumar Pandey"
+app_description = "Frappe Treds Dynamic Discounting Engine - Enterprise Multi-DocType Solution for Frappe & ERPNext"
+app_email = "shyampandey1104@gmail.com"
 app_license = "MIT"
 
-app_include_js = "/assets/treds_dynamic_discounting/js/treds_dynamic_discounting.bundle.js"
+# Includes in <head>
+# ------------------
 app_include_css = "/assets/treds_dynamic_discounting/css/treds_dynamic_discounting.bundle.css"
+app_include_js = "/assets/treds_dynamic_discounting/js/treds_dynamic_discounting.bundle.js"
+
+# Document Events
+# ---------------
+doc_events = {
+    "Frappe Treds Dynamic Discounting Engine Entry": {
+        "validate": "treds_dynamic_discounting.services.validator.EnterpriseValidationEngine.validate_compliance_rules",
+        "on_submit": "treds_dynamic_discounting.services.integration_service.EnterpriseIntegrationService.verify_remote_status"
+    }
+}
+
+# Scheduled Background Tasks
+# --------------------------
+scheduler_events = {
+    "hourly": [
+        "treds_dynamic_discounting.tasks.hourly_sync"
+    ],
+    "daily": [
+        "treds_dynamic_discounting.tasks.daily_reconciliation"
+    ],
+    "weekly": [
+        "treds_dynamic_discounting.tasks.weekly_digest"
+    ]
+}
